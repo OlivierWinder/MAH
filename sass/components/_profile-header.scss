@@ -1,0 +1,62 @@
+@use '../utils' as u;
+
+.profile-header{
+    height: 180px;
+    margin: 0px 20px;
+    border-bottom: 1px solid u.$grey;
+
+    .profile-info{
+        height: 55%;
+        // background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        .profile-info-spacing-container{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-info__image{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: black;
+
+            &__img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+
+        .profile-info__icons{
+
+            display: flex;
+            gap: 1rem;
+
+            &__heading{
+                text-align: center;
+            }
+
+            &__recipes span{
+                color: u.$red;
+            }
+            
+            &__followers span{
+                color: u.$green;
+            }
+        }
+    }
+
+    .profile-stats{
+        height: 45%;
+        background-color: white;
+    }
+
+    
+}

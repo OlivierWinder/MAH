@@ -1,0 +1,55 @@
+@use '../utils' as u;
+
+// MONTSERRAT for base
+body{
+    font-family: u.$montserrat;
+}
+
+// QUICHE for all p tags
+p {
+    font-family: quiche-text, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+// MONTSERRAT for all headings
+h1{
+    font-size: u.$fontsize-1;
+    font-family: u.$montserrat;
+    font-weight: 800;
+}
+h2{
+    font-size: u.$fontsize-2;
+    font-family: u.$montserrat;
+    font-weight: 700;
+}
+h3{
+    font-size: u.$fontsize-3;
+    font-family: u.$montserrat;
+    font-weight: 600;
+}
+h4{
+    font-size: u.$fontsize-4;
+    font-family: u.$montserrat;
+    font-weight: 500;
+}
+h5{
+    font-size: u.$fontsize-5;
+    font-family: u.$montserrat;
+    font-weight: 400;
+}
+h6{
+    font-size: u.$fontsize-6;
+    font-family: u.$montserrat;
+    font-weight: 300;
+}
+.h-small{
+    font-size: u.$fontsize-small;
+    font-family: u.$montserrat;
+    font-weight: 300;
+}
+
+// icons sizing
+.h-small .material-symbols-rounded{
+    font-size: u.$fontsize-small;
+}
