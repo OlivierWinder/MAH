@@ -10,7 +10,7 @@
     padding: 0 1rem;
     display: flex;
     border-bottom: 1px solid u.$grey;
-    background-color: u.$grey;
+    background-color: u.$red;
 
     .search-btn{
         display: flex;
@@ -52,10 +52,11 @@
         width: 100%;
         gap: 0.5rem;
         overflow-x: scroll;
+        overflow-y: hidden;
 
         .active-filter{
             width: fit-content;
-            border: 1px solid black;
+            border: 1px solid u.$red;
             border-radius: 20px;
             padding: 3px 6px;
         }
@@ -66,7 +67,8 @@
     height: calc(100vh - 60px - 50px - 50px );
     width: 100vw;
     scroll-snap-type: y mandatory;
-    overflow-x: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .card-container{

@@ -6,10 +6,15 @@
     left: 0px;
     width: 100vw;
     height: 50px;
-    background-color: rgba(u.$grey, $alpha: 0.7);
+    background-color: rgba(u.$black, $alpha: 0.9);
+    z-index: 99;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    .material-symbols-rounded {
+        color: white;
+    }
 }
 .nav__link{
     width: 100%;

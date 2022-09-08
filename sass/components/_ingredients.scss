@@ -1,0 +1,52 @@
+@use '../utils' as u;
+
+.ingredients{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: u.$green;
+    position: fixed;
+    z-index: 9999;
+
+    .ingredients-heading{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .close-btn{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+
+            color: u.$red;
+        }
+    }
+
+    .ingredients-list{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 50% auto;
+
+        &__category{
+
+            &__heading{
+                padding-bottom: 0.3rem;
+            }
+
+            &__item{
+                font-size: u.$fontsize-6;
+                padding: 0.1rem 0;
+            }
+        }
+    }
+}
