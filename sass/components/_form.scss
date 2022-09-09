@@ -1,27 +1,39 @@
 @use '../utils' as u;
-
 .form-section{
 
     height: calc(100vh - 130px);
-    background-color: red;
+    overflow-x: hidden;
 
     .form{
-
         width: 100vw;
         height: 100%;
-        background-color: blue;
-        display: flex;
-        scroll-snap-align: y mandatory;
-        overflow: hidden;
+        position: relative;
+        transition: all 200ms ease-in-out;
 
         .form-page{
-            flex-shrink: 0;
             width: 100vw;
             height: 100%;
             background-color: orange;
             border: 1px solid black;
-
             padding: 1rem;
+            position: absolute;
+        }
+        .form-page--1{
+            left: 0vw;
+            transition: all 250ms ease-in-out;
+        }
+        .form-page--2{
+            left: 100vw;
+            transition: left 250ms ease-in-out;
+        }
+        .form-page--3{
+            left: 200vw;
+        }
+        .form-page--4{
+            left: 300vw;
+        }
+        .form-page--5{
+            left: 400vw;
         }
 
 
@@ -31,18 +43,20 @@
 
 .progress-bar-section{
 
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-    position: relative;
+    position: fixed;
+    bottom: 50px;
 
 }
 .progress-bar{
 
     width: 70%;
     height: 2px;
-    background-color: black;
+    background-color: u.$grey;
 }
 
 .test{
@@ -52,20 +66,19 @@
     transform: translateY(-50%);
     left: 15%;
 
-    width: 17.5%;
     height: 10px;
     background-color: u.$green;
     border-radius: 10px;
 
 }
 
-.arrow-left{
-    margin-left: 0.8rem;
+.arrow-right{
+    margin-left: 1.2rem;
     font-size: u.$fontsize-3;
     cursor: pointer;
 }
-.arrow-right{
-    margin-right: 0.8rem;
+.arrow-left{
+    margin-right: 1rem;
     font-size: u.$fontsize-3;
     cursor: pointer;
 }
